@@ -1,0 +1,23 @@
+<nav id="sideNav" class="navbar fixed-top navbar-expand-lg">
+    <a class="navbar-brand color-text-titulo d-vertical">
+        <img id="logo" src="assets/logo.png" class="align-top logo-page" alt="">
+        <label id="menu-mobile" (click)="openMenu()" class="align-top mostrar-in-mobile">
+            <i class="fas fa-bars"></i>
+        </label>
+    </a>
+
+    <div class="container-fluid ocultar-in-mobile">
+        <div class="row w-100 menu">
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div (click)="navegar('inicio')" class="col-1 d-vertical color-text-nav">Inicio</div>
+            <div (click)="navegar('servicios')" class="col-1 d-vertical color-text-nav">Servicios</div>
+            <div (click)="navegar('nosotros')" class="col-1 d-vertical color-text-nav">Nosotros</div>
+            <div (click)="navegar('vision&mision')" class="col-2 d-vertical color-text-nav">Visión & Misión</div>
+            <div (click)="navegar('contacto')" class="col-1 d-vertical color-text-nav">Contacto</div>
+        </div>
+    </div>
+</nav>

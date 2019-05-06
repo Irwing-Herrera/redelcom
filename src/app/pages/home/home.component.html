@@ -1,0 +1,523 @@
+<div id="pageHome" class="container-page-home">
+
+    <div class="header-image">
+        <img src="assets/back.jpg" class="img-fluid" />
+
+        <!-- HEADER -->
+        <div id="inicio" class="centered">
+            <div class="row d-vertical h100">
+
+                <div class="col-sm-12 col-md-5">
+                    <div class="row">
+
+                        <div *ngIf="header == 0" class="padding-header">
+                            <div class="col-12 titulo-header ocultar-320px">
+                                <label class="position-absolute index">¿Quiénes Somos?</label>
+                                <label class="subtitulo-header-primary position-relative">¿Quiénes Somos?</label>
+
+                            </div>
+                            <div class="col-12 text-header text-justify">Somos una empresa dedicada a proveer una respuesta eficiente para realizar proyectos de Cableado Estructurado y Eléctrico. También realizamos proyectos de Electrónica, Audio y Video, Construcción, Reparación, Servicio y Mantenimiento
+                                contando con experiencia, reconocimiento, confianza y la satisfacción de nuestros clientes.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+                <div class="col-sm-12 col-md-5" [@fadeAnimation]="header">
+
+                    <div *ngIf="header == 0">
+                        <img src="assets/computer.svg" class="mx-auto d-block w-50" />
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN HEADER -->
+    </div>
+
+    <div class="wave-section">
+
+        <!-- SERVICIOS -->
+        <div class="cards">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 d-vertical">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="servicios" class="card shadow p-1 rounded">
+                                <div class="row p-2">
+
+                                    <div class="col-12 text-center">
+                                        <label class="titulo-header-2">Nuestros Servicios</label>
+
+                                    </div>
+                                    <div class="col-sm-12 col-md-3 border-color">
+                                        <div class="row p-1 h100">
+                                            <div class="col-12 d-vertical">
+                                                <img src="assets/ethernet.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-12 p-4">
+                                                <h6 class="text-center">Cableado Estructurado</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('firstService')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-3 border-color">
+                                        <div class="row p-1 h100">
+                                            <div class="col-12 d-vertical">
+                                                <img src="assets/optical.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-12 p-4">
+                                                <h6 class="text-center">Fibra Óptica</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('secondService')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="row p-1 h100">
+                                            <div class="col-md-12 d-vertical">
+                                                <img src="assets/cctv.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-md-12 p-4">
+                                                <h6 class="text-center">CCTV</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('thirdServicio')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="row p-1 h100">
+                                            <div class="col-md-12 d-vertical">
+                                                <img src="assets/dvr.svg" class="img-fluid img-servicios" />
+                                            </div>
+                                            <div class="col-md-12 p-4">
+                                                <h6 class="text-center">Instalación DVR</h6>
+                                                <hr>
+                                                <div class="d-vertical">
+                                                    <button (click)="navegar('fiveService')" type="button" class="btn btn-outline-dark rounded-pill btn-text">Más
+                                                        información</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN SERVICIOS -->
+
+        <svg viewBox="0 0 1000 120" aria-hidden="true">
+            <path
+                d="M1950,15.2101911 L1440,120 L0,120 L0,21.2101911 C100,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <!-- NOSOTROS -->
+    <div class="seccion">
+        <div id="nosotros" class="row">
+            <div class="col-1 ocultar-320px"></div>
+
+            <div class="col-sm-12 col-md-5 text-justify p-5 text-page">
+                <label class="titulo-header position-absolute index">Nosotros</label>
+                <label class="subtitulo-header position-relative">Nosotros</label>
+
+                <div class="hr-star"></div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <label class="text-center">Creemos en la innovación como pilar de la diferenciación.</label>
+                    </div>
+                    <div class="col-12 d-vertical">
+                        <img src="/assets/nosotros-icon.svg" class="img-fluid img-mobile" width="200" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <ul class="timeline">
+                    <li>
+                        <label class="first-timeline"></label>
+                        <a class="titulo-timeline">El Inicio</a>
+                        <p class="justify-content text-mobile">Interactuamos como colegas y encontramos afinidades y visión profesional de proyectos, iniciando como equipo Multidisciplinario.</p>
+                    </li>
+                    <li>
+                        <label class="second-timeline"></label>
+                        <a class="titulo-timeline">La Estructura</a>
+                        <p class="justify-content text-mobile">Desarrollamos productos y servicios con soluciones innovadoras para líderes de distintos sectores. Así nace BLACKSTAR Technology.</p>
+                    </li>
+                    <li>
+                        <label class="third-timeline"></label>
+                        <a class="titulo-timeline">La Consolidación</a>
+                        <p class="justify-content text-mobile">Se integra como empresa multidisciplinaria para la Innovación, emprendimiento y Transformación Digital.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- FIN NOSOTROS -->
+
+    <!-- VISION & MISION -->
+    <div id="vision&mision" class="line-Vertical">
+        <div class="line-Vertical-Container text-page">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <div class="border-right h-100 p-3">
+                        <h4 class="titulo-header-2">Acciones</h4>
+                        <hr class="hr-white">
+                        <p class="text-mobile">Serviciales, Eficaces y Aplicativos.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mtop-3+2">
+                    <div class="border-right h-100 p-3">
+                        <h4 class="titulo-header-2">Visión</h4>
+                        <hr class="hr-white">
+                        <p class="text-mobile">Ser una Empresa consolidad, dando un excelente servici, teninedo las bases de trabajo bine establecidas.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mtop-3">
+                    <div class="border-right h-100 p-3">
+                        <h4 class="titulo-header-2">Misión</h4>
+                        <hr class="hr-white">
+                        <p class="text-mobile">Satisfacer las necesidades urgentes y/o prioritarias del cliente siendo porfesionales.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mtop-4">
+                    <div class="h-100 p-3">
+                        <h4 class="titulo-header-2">Valores</h4>
+                        <hr class="hr-white">
+                        <div class="d-vertical">
+                            <ul class="text-left text-mobile">
+                                <li>Honestidad</li>
+                                <li>Congruencia</li>
+                                <li>Discreción</li>
+                                <li>Responsabilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN VISION & MISION -->
+
+
+    <!-- FIRST SERVICE -->
+    <div id="firstService" class="seccion-second">
+        <div class="ocultar-320px">
+            <div class="box-seccion" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;"></div>
+        </div>
+        <div class="container-fluid seccion-1">
+            <div class="row">
+                <div class="col-sm-12 col-md-5 d-vertical order-image">
+                    <!-- <img src="assets/desarrollo.png" class="seccion-image-desarrollo" /> -->
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+                <div class="col-sm-12 col-md-6 text-justify p-5 text-page">
+                    <label class="titulo-header position-absolute">Cableado Estructurado</label>
+                    <label class="subtitulo-header position-relative">Cableado Estructurado</label>
+                    <div class="hr-star"></div>
+                    <label class="text-mobile">
+                        Somos una empresa especializada en Cableado Estructurado. Ofrecemos servicios, soluciones y
+                        productos para el cableado estructurado de su oficina, edificio o empresa con el fin de dotarle y
+                        ofrecerle conectividad en todos sus equipos activos, de diferentes o igual tecnología.
+                    </label>
+                    <label class="text-mobile">
+                        Con nuestros Servicios de Cableado podrá obtener la integración de los diferentes servicios de los
+                        que disponga, como pueden ser telefonía, voz, datos, video, seguridad, domótica etc. Es decir, todo
+                        lo referente al cableado estructurado, a los sistemas de cableado estructurado (SCE), al cableado
+                        red y cableado Voz y Datos.
+                    </label>
+                    <label class="text-mobile">
+    
+                        Gracias a nuestras soluciones de conectividad e implantación le proporcionamos infraestructuras y
+                        redes inalámbricas, fibra óptica y cobre que habilitan una gran cantidad de servicios de
+                        comunicaciones. Además, llevamos a cabo auditorías y mantenimiento. Deje en nuestras manos todo lo
+                        referente al Cableado Estructurado de su empresa o proyecto.
+                    </label>
+                    <ul class="text-mobile">
+                        <li>Reinstalaciones de cableado.</li>
+                        <li>Cambios, movimientos y ampliaciones.</li>
+                        <li>Actualización de sistemas de cableado obsoletos a tecnologías recientes.</li>
+                        <li>Análisis de desempeño de redes y documentación.</li>
+                        <li>Prueba y monitoreo de los componentes de su red.</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN FIRST SERVICE -->
+
+    <!-- SECOND SERVICE -->
+    <div id="secondService" class="seccion-second">
+        <div class="ocultar-320px">
+            <div class="box-seccion-third-1" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;">
+            </div>
+            <div class="box-seccion-third-2" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;">
+            </div>
+        </div>
+
+        <div class="container-fluid seccion-3 text-page">
+            <div class="row">
+                <div class="col-1 ocultar-320px"></div>
+
+                <div class="col-sm-12 col-md-6 text-justify p-5">
+                    <label class="titulo-header position-absolute">Fibra Optica</label>
+                    <label class="subtitulo-header position-relative">Fibra Optica</label>
+                    <div class="hr-star"></div>
+
+                    <label class="text-mobile">
+                                    Instalación, servicio y distribución de fibra óptica para telecomunicaciones.
+                                </label>
+                    <ul class="text-mobile">
+                        <li>F.O. certificada planta interna-planta externa, canalización tubería, charola, soporte aéreo, canalización subterránea, obra civil relacionada con estos trabajos.</li>
+                        <li>Mantenimiento a cortes de fibra óptica (bi-fibra, 12 hilos, 24 hilos, 48 hilos, 96 hilos y 144 hilos).
+                        </li>
+                        <li>Construcción de brazos de fibra óptica (48 hilos, 96 hilos y 144 hilos.).</li>
+                        <li>Instalación de fibra óptica para radio bases.</li>
+                        <li>Obra civil y canalización para fibra óptica.</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+
+                <div class="col-sm-12 col-md-4 d-vertical order-image">
+                    <!-- <img src="assets/modelo.png" class="seccion-image-modelo" /> -->
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SECOND SERVICE -->
+
+    <!-- THIRD SERVICE -->
+    <div id="thirdServicio" class="seccion-second section-margen-menos">
+        <div class="ocultar-320px">
+            <div class="box-fourth" style="z-index: -100;"></div>
+        </div>
+        <div class="container-fluid seccion-4 text-page">
+            <div class="row">
+                <div class="col-1 ocultar-320px"></div>
+
+                <div class="col-sm-12 col-md-4 d-vertical order-image">
+                    <!-- <img src="assets/consultoria.png" class="seccion-image-consultoria" /> -->
+                </div>
+                <div id="fourthServicio" class="col-sm-12 col-md-5 text-justify p-5">
+                    <label class="titulo-header position-absolute">CCTV</label>
+                    <label class="subtitulo-header position-relative">CCTV</label>
+                    <div class="hr-star"></div>
+
+                    <label class="text-mobile">Nuestro servicio de Circuito Cerrado de Televisión ofrece monitoreo local y remoto, así
+                                            como:</label>
+                    <div class="row">
+                        <div class="col-6 d-vertical">
+                            <ul class="text-mobile">
+                                <li>DVRs.</li>
+                                <li>Multiplexores.</li>
+                                <li>Joystick.</li>
+                                <li>Cámaras.</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="text-mobile">
+                                <li>PTZ.</li>
+                                <li>Giratorias y Fijas.</li>
+                                <li>Corto, mediano y largo alcance.</li>
+                                <li>Con visión nocturna.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <label class="text-mobile">Controle su cása o comercio por Internet para evitar robos, engaños o inconvenientes
+                                            mayores.</label>
+                    <ul class="text-mobile">
+                        <li>Soluciones a la medida de cada cliente.</li>
+                        <li>Garantía en la instalación.</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+
+                <div class="col-3 ocultar-320px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN THIRD SERVICE -->
+
+    <!-- FIVE SERVICE -->
+    <div id="fiveService" class="seccion-second">
+        <div class="ocultar-320px">
+            <div class="box-seccion-five-1" data-rellax-speed="10" data-rellax-percentage="0.5" style="z-index: -100;">
+            </div>
+        </div>
+
+        <div class="container-fluid seccion-5 text-page">
+            <div class="row">
+                <div class="col-1 ocultar-320px"></div>
+
+                <div class="col-sm-12 col-md-6 text-justify p-5">
+
+                    <label class="titulo-header position-absolute">Instalación DVR</label>
+                    <label class="subtitulo-header position-relative">Instalación DVR</label>
+                    <div class="hr-star"></div>
+
+                    <label class="text-mobile">El DVR (Digital Video Recorder) es un aparato de gestión de vídeo para el control, la
+                                grabación y el archivo de vídeos que provienen de cámaras de videovigilancia en uno o más discos
+                                duros. Existen varias tipologías de DVR en el mercado que son diferentes entre ellas no sólo por
+                                las características ligadas al número de ingresos de vídeo o las prestaciones, sino también por
+                                la capacidad de transmitir las imágenes a través de una red LAN o Internet.</label>
+                    <label class="text-mobile">A cualquiera de las categorías a las que pertenezcan, todos los dispositivos DVR para la
+                                gestión de vídeo centralizada basan su actividad en dos funciones primordiales:</label>
+                    <ul class="text-mobile">
+                        <li>Digitalización del vídeo.</li>
+                        <li>Compresión del vídeo.</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-outline-success rounded-pill btn-text">Contratar</button>
+                </div>
+
+                <div class="col-sm-12 col-md-4 d-vertical order-image">
+                    <!-- <img src="assets/modelo.png" class="seccion-image-five" /> -->
+                </div>
+                <div class="col-1 ocultar-320px"></div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN FIVE SERVICE -->
+
+    <!-- SEX SERVICE -->
+    <div id="sexService" class="seccion-second">
+        <div class="container-fluid seccion-6 text-page">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-justify p-5">
+
+                    <label class="titulo-header-2">Algunas marcas y tecnologías en las que nos especializamos</label>
+                    <div class="hr-star"></div>
+
+                    <div class="row">
+                        <div class="col-2"><img src="/assets/1.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/2.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/3.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/4.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/6.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/7.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/8.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/9.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/10.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/5.png" class="img-fluid" /></div>
+                        <div class="col-2"><img src="/assets/11.png" class="img-fluid" /></div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 text-justify p-5">
+
+                    <label class="titulo-header-2">Algunos de nuestros Clientes</label>
+                    <div class="hr-star"></div>
+
+                    <ul class="text-mobile">
+                        <li>LuK Puebla S. de R.L. de C.V. Plantas 1 y 2.</li>
+                        <li>Schaeffler Automotive Aftermarket México S. de R.L. de C.V.</li>
+                        <li>Faurecia Sistemas Automotrices Nave 4.</li>
+                        <li>Clínicas Nutrimet.</li>
+                        <li>HBPO S.A. de C.V.</li>
+                        <li>American Plastics S.A. de C.V.</li>
+                        <li>Además de: Oficinas, Despachos, Centros de Capacitación, Consultorios y Escuelas.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FIN SEX SERVICE -->
+
+    <div id="contacto" class="wave-section-2">
+
+        <svg viewBox="0 0 1000 120" aria-hidden="true">
+            <path
+                d="M1950,15.2101911 L1440,120 L0,120 L0,21.2101911 C100,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z">
+            </path>
+        </svg>
+
+        <div id="seccion_3" class="contactos p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 ocultar-320px">
+                        <div class="img-card shadow-lg rounded float-right">
+                            <img src="assets/woman.jpg" class="img-card-size rounded" />
+                        </div>
+                    </div>
+
+                    <div class="col-4 ocultar-320px">
+                        <div class="row p-1">
+                            <div class="col-12 p-3">
+                                <label class="nombre-card">Nombre Apellido</label>
+
+                                <hr class="hr-white">
+
+                                <label class="text-muted">Fundador</label>
+                                <label class="texto-card">Loreipsum dolor sit amet consectetur adipisicing elit. Eos
+                                    ut suscipit corrupti? Eius eos, neque incidunt officiis corporis assumenda
+                                    praesentium!</label>
+                                <div class="container pt-2">
+                                    <div class="row">
+                                        <div class="col-4 d-vertical mt-4 pointer">
+                                            <a href="//api.whatsapp.com/send?phone=5212229139192">
+                                                <div class="row btn btn-outline-success">
+                                                    <div class="col-12">
+                                                        <img src="assets/whatsapp.svg" class="icon-red-card" /> Contactanos
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mostrar-in-mobile">
+                        <div class="container">
+                            <div class="col-12 d-vertical">
+                                <a href="//api.whatsapp.com/send?phone=5212229139192">
+                                    <div class="row btn btn-outline-success">
+                                        <div class="col-12 text-mobile">
+                                            <img src="assets/whatsapp.svg" class="icon-red-card" /> Contactanos
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 mtop-5 contacto">
+                        <label class="nombre-card titulo-header">Contactanos</label>
+                        <app-formulario></app-formulario>
+                    </div>
+
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

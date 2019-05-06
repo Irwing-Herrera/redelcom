@@ -1,0 +1,27 @@
+.container-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-alerts {
+    top: 0;
+    right: 0;
+    background: #222831;
+    color: #f6f5f5;
+    position: fixed;
+    z-index: 1030;
+}
+
+.sombra {
+    box-shadow: 0 0 52rem rgba(0, 0, 0, .175)!important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container-page {
+        width: 400vw;
+    }
+    .side-alerts {
+        height: 100%;
+        width: 76%;
+    }
+}

@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<!-- Page Content  -->
+
+<div class="container-page">
+    <router-outlet></router-outlet>
+
+    <div *ngIf="showSideMenu">
+        <app-side-menu [@fadeAnimation]="showSideMenu" (click)="clickSides($event)" class="side-alerts sombra"></app-side-menu>
+    </div>
+</div>
+
+<!-- Page Content  -->

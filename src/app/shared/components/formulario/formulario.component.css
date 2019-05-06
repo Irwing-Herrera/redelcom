@@ -1,0 +1,27 @@
+.center {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Celular */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .ocultar-320px {
+        display: none;
+    }
+    .title-mobile {
+        font-size: 4rem;
+    }
+    .text-mobile {
+        font-size: 4rem;
+    }
+    .btn-text {
+        font-size: 5rem;
+        padding-left: 9rem !important;
+        padding-right: 9rem !important;
+        margin-top: 2rem;
+    }
+}
